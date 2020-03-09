@@ -2,11 +2,12 @@
 .idea
 .publish/
 build/
+css/
 node_modules/
-css/*.css
 *.ai
 *.log
 *.pdf
 *.psd
 *.txt
+mix-manifest.json
 Thumbs.db

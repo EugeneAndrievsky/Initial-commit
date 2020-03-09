@@ -1,16 +1,61 @@
-body {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-
-  color: ;
-  background-color: ;
-}
+/* web-safe fonts
+"Helvetica", "Tahoma", "Verdana", "Arial", sans-serif
+"Georgia", "Garamond", "Palatino", serif
+"Lusida Console", "Consolas", "Courier New", monospace
+"Brush Script MT", script
+*/
 
 /*
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("../fonts/pfagorasanspro-bold.woff2") format("woff2"),
+       url("../fonts/pfagorasanspro-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
-*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
